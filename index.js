@@ -11,7 +11,7 @@ app.use(express.json())
 // app.use(express.urlencoded({extended:true}))
 
 app.use('/api/auth', require('./routes/auth'))
-// app.use('/api/store',require('./routes/store'))
+app.use('/api/request', require('./routes/friend'))
 
 app.get("/", (req, res) => {
     res.send("<h1>Geeks App chat API</h1><h3>Made by <a href='https://www.linkedin.com/in/aksoni0520/'>Arjun</a></h3>"
